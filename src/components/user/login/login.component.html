@@ -1,2 +1,7 @@
 <nav-bar></nav-bar>
-<login-form></login-form>
+<login-form
+    [loginForm]="loginForm"
+    (loginEvent)="login()"
+></login-form>
+
+<div></div>

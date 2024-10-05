@@ -3,13 +3,32 @@
         <div class="col-md-4" id="side1">
             <h3>Hello Friend!</h3>
             <p>Create New Account</p>
-            <div id="btn"><a routerLink="/signup">Sign up</a></div>
+            <div id="btn">
+                <a routerLink="/signup">Sign up</a>
+            </div>
         </div>
-        <div class="col-md-8" id="side2">
+        <form 
+            [formGroup]="loginForm" 
+            (ngSubmit)="login()" 
+            class="col-md-8" 
+            id="side2"
+        >
             <h3>Login Account</h3>
-            <div class="inp">
-                <input type="text" placeholder="User Name" required>
-                <input type="text" placeholder="Password" required>
+            <div class="">
+                <input type="text" class="p-1" placeholder="User Name or email" required formControlName="usernameForm">
+                <div 
+                    *ngIf="!usernameForm?.valid && (usernameForm?.dirty || usernameForm?.touched)"
+                    class="error-validation"
+                >
+                    Username is invalid!
+                </div>
+                <input type="password" class="p-1" placeholder="Password" required formControlName="passwordForm">
+                <div 
+                    *ngIf="passswordForm?.invalid && (passswordForm?.dirty || passswordForm?.touched)"
+                    class="error-validation"
+                >
+                    Password is invalid!
+                </div>
             </div>
             <p>Forgot Your Password</p>
             <div class="icons">
@@ -17,7 +36,9 @@
                 <i class="fa-brands fa-facebook-f"></i>
                 <i class="fa-brands fa-instagram"></i>
             </div>
-            <div id="login"><button>LOG IN</button></div>
-        </div>
+            <div id="login">
+                <button type="submit" >LOG IN</button>
+            </div>
+        </form>
     </div>
 </div>

@@ -657,3 +657,7 @@ html{
     color: white;
 }
 /* contact */
+
+.error-validation {
+    color: red;
+}
