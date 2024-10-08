@@ -5,7 +5,6 @@ import { OfferComponent } from './offer/offer.component';
 import { BannerComponent } from './banner/banner.component';
 import { ProductCartComponent } from './product-cart/product-cart.component';
 import { FooterComponent } from '../../ui/footer/footer.component';
-import { HeaderComponent } from '../../ui/header/header.component';
 import { NavBarComponent } from '../../ui/nav-bar/nav-bar.component';
 import { HomeContentComponent } from './home-content/home-content.component';
 import { TopNavComponent } from '../../ui/top-nav/top-nav.component';
@@ -21,7 +20,6 @@ import { TopNavComponent } from '../../ui/top-nav/top-nav.component';
     BannerComponent,
     ProductCartComponent,
     FooterComponent,
-    HeaderComponent,
     NavBarComponent,
     HomeContentComponent
   ],

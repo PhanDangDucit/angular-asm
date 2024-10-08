@@ -1,2 +1,7 @@
+<top-nav></top-nav>
 <nav-bar></nav-bar>
-<signup-form></signup-form>
+<signup-form
+    [signupForm]="signupForm"
+    (signupEvent)="signup()"
+></signup-form>
+<footer-user></footer-user>

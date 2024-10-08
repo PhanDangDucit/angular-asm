@@ -5,10 +5,23 @@
         <i class="fa-brands fa-instagram"></i>
     </div>
     <div class="other-links">
-        <button id="btn-login"><a routerLink="/signin">Login</a></button>
-        <button id="btn-signup"><a routerLink="/signup">Sign up</a></button>
+        @if (!isAuth) {
+            <button id="btn-login">
+                <a routerLink="/signin">Login</a>
+            </button>
+            <button id="btn-signup">
+                <a routerLink="/signup">Sign up</a>
+            </button>
+        } @else {
+            <button id="btn-signout" (click)="logout()">
+               Sign out
+            </button>
+        }
 
         <i class="fa-solid fa-user"></i>
-        <i class="fa-solid fa-cart-shopping"></i>
+        <a class="position-relative" routerLink="/cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="position-absolute">{{productCartQuantity}}</span>
+        </a>
     </div>
 </div>

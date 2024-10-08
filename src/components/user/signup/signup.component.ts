@@ -4,15 +4,20 @@ import { RouterLink } from '@angular/router';
 import { NavBarComponent } from '../../ui/nav-bar/nav-bar.component';
 import { AuthService } from '../../../services/auth.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FooterComponent } from "../../ui/footer/footer.component";
+import { TopNavComponent } from '../../ui/top-nav/top-nav.component';
 
 @Component({
   selector: 'app-signup',
   standalone: true,
   imports: [
-    SignupFormComponent, 
+    SignupFormComponent,
     RouterLink,
-    NavBarComponent
-  ],
+    NavBarComponent,
+    FooterComponent,
+    TopNavComponent,
+    FooterComponent
+],
   templateUrl: './signup.component.html',
   styleUrl: './signup.component.css'
 })

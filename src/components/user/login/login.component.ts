@@ -4,6 +4,7 @@ import { LoginFormComponent } from './login-form/login-form.component';
 import { AuthService } from '../../../services/auth.service';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import {Validators} from '@angular/forms';
+import { TopNavComponent } from "../../ui/top-nav/top-nav.component";
 
 @Component({
   selector: 'app-login',
@@ -11,8 +12,9 @@ import {Validators} from '@angular/forms';
   imports: [
     NavBarComponent,
     LoginFormComponent,
-    ReactiveFormsModule
-  ],
+    ReactiveFormsModule,
+    TopNavComponent
+],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })

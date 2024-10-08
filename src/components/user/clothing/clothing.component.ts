@@ -5,6 +5,7 @@ import { BannerClothingComponent } from './banner-clothing/banner-clothing.compo
 import { OfferClothingUserComponent } from './offer/offer.component';
 import { ProductCardsClothingUserComponent } from './product-cards-clothing-user/product-cards-clothing-user.component';
 import { FooterComponent } from '../../ui/footer/footer.component';
+import { ProductCartComponent } from './product-cart/product-cart.component';
 
 @Component({
   selector: 'app-clothing',
@@ -14,6 +15,7 @@ import { FooterComponent } from '../../ui/footer/footer.component';
     NavBarComponent,
     BannerClothingComponent,
     OfferClothingUserComponent,
+    ProductCartComponent,
     ProductCardsClothingUserComponent,
     FooterComponent
   ],

@@ -30,7 +30,7 @@
     margin-left: 10px;
     cursor: pointer;
 }
-#btn-login{
+#btn-login, #btn-signout {
     width: 100px;
     border: 2px solid #1c1c50;
     color: #1c1c50;
@@ -45,7 +45,7 @@
     color: #1c1c50;
     transition: 0.5s ease;
 }
-#btn-login a:hover{
+#btn-login a:hover, #btn-signout:hover {
     background-color: #1c1c50;
     color: white;
 }

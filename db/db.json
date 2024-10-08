@@ -1,12 +1,114 @@
 {
-    "users": [
-        {
-            "username": "duc",
-            "password": "123456"
-        },
-        {
-            "username": "duc1",
-            "password": "1234567"
-        }
-    ]
+  "users": [
+    {
+      "id": "1",
+      "username": "duc@gmail.com",
+      "password": "123456",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "username": "duc1@gmail.com",
+      "password": "1234567",
+      "role": "user"
+    },
+    {
+      "id": "50",
+      "username": "duc2@gmail.com",
+      "password": "123456",
+      "role": "user"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "product_name": "Men T-Shirt",
+      "product_image": "./image/p13.png",
+      "sumary_description": "Lorem ipsum dolor sit amet.",
+      "star_rating": 3.2,
+      "price": "$50"
+    },
+    {
+      "id": "2",
+      "product_name": "Purple Heel",
+      "product_image": "./image/p14.png",
+      "sumary_description": "Lorem ipsum dolor sit amet.",
+      "star_rating": 3.2,
+      "price": "$56.50"
+    },
+    {
+      "id": "3",
+      "product_name": "Men Shoes",
+      "product_image": "./image/p15.png",
+      "sumary_description": "Lorem ipsum dolor sit amet.",
+      "star_rating": 3.2,
+      "price": "$150.5"
+    },
+    {
+      "id": "4",
+      "product_name": "Men T-Shirt",
+      "product_image": "./image/p13.png",
+      "sumary_description": "Lorem ipsum dolor sit amet.",
+      "star_rating": 3.2,
+      "price": "$50"
+    },
+    {
+      "id": "5",
+      "product_name": "Men Jacket",
+      "product_image": "./image/p16.png",
+      "sumary_description": "Lorem ipsum dolor sit amet.",
+      "star_rating": 3.2,
+      "price": "$50.60"
+    },
+    {
+      "id": "6",
+      "product_name": "Blue T-Shirt",
+      "product_image": "./image/p17.png",
+      "sumary_description": "Lorem ipsum dolor sit amet.",
+      "star_rating": 3.2,
+      "price": "$5.60"
+    },
+    {
+      "id": "7",
+      "product_name": "Men T-Shirt",
+      "product_image": "./image/p13.png",
+      "sumary_description": "Lorem ipsum dolor sit amet.",
+      "star_rating": 3.2,
+      "price": "$50"
+    },
+    {
+      "id": "8",
+      "product_name": "Girls Sandal",
+      "product_image": "./image/p13.png",
+      "sumary_description": "Lorem ipsum dolor sit amet.",
+      "star_rating": 3.2,
+      "price": "$2.30"
+    }
+  ],
+  "carts": [
+    {
+      "id": "390",
+      "user_id": "50",
+      "product_id": "1",
+      "quantity": 1
+    },
+    {
+      "id": "76",
+      "user_id": "50",
+      "product_id": "2",
+      "quantity": 4
+    },
+    {
+      "id": "20",
+      "user_id": "50",
+      "product_id": "3",
+      "quantity": 3
+    },
+    {
+      "id": "314",
+      "user_id": "50",
+      "product_id": "5",
+      "quantity": 1
+    }
+  ]
 }

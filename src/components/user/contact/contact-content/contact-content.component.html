@@ -4,36 +4,61 @@
         <div class="col-md-4 py-3 py-md-0">
             <div class="card">
                 <i class="fas fa-phone"> Phone</i>
-                <h6>+00000000000000000</h6>
+                <h6>+94 326172828</h6>
             </div>
         </div>
         <div class="col-md-4 py-3 py-md-0">
             <div class="card">
                 <i class="fa-solid fa-envelope"> Email</i>
-                <h6>example&#64;gmail.com</h6>
+                <h6>fashion&#64;gmail.com</h6>
             </div>
         </div>
         <div class="col-md-4 py-3 py-md-0">
             <div class="card">
                 <i class="fa-solid fa-location-dot"> Address</i>
-                <h6>Karachi Sinfh Pakistan</h6>
+                <h6>12 District, HCM city</h6>
             </div>
         </div>
     </div>
 
-    <div class="row" style="margin-top: 30px;">
+    <form 
+        [formGroup]="contactForm" 
+        class="row" 
+        style="margin-top: 30px;"
+        (ngSubmit)="sentMessage()"
+    >
         <div class="col-md-4 py-3 py-md-0">
-            <input type="text" class="form-control form-control" placeholder="Name">
+            <input type="text" formControlName="usernameForm" class="form-control form-control" placeholder="Name">
         </div>
         <div class="col-md-4 py-3 py-md-0">
-            <input type="text" class="form-control form-control" placeholder="Email">
+            <input type="text" formControlName="emailForm" class="form-control form-control" placeholder="Email">
         </div>
         <div class="col-md-4 py-3 py-md-0">
-            <input type="number" class="form-control form-control" placeholder="Phone">
+            <input type="number" formControlName="phoneForm" class="form-control form-control" placeholder="Phone">
         </div>
        <div class="form-group" style="margin-top: 30px;">
-        <textarea class="form-control" id=""rows="5" placeholder="Message"></textarea>
+            <textarea formControlName="messageForm" class="form-control" id=""rows="5" placeholder="Message"></textarea>
+        </div>
+        <div id="messagebtn" class="text-center">
+            <button type="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Send message</button>
+        </div>
+    </form>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Notify success</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
-    <div id="messagebtn" class="text-center"><button>Message</button></div>
+    <div class="modal-body">
+        Thank you! You are send messgae successfull!
     </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    </div>
+    </div>
+</div>
 </div>

@@ -5,19 +5,20 @@ import { NotFoundComponentComponent } from '../components/not-found-component/no
 import { childAdminRoutes } from './admin.route';
 import { childUserRoutes } from './users.route';
 import { AppComponent } from './app.component';
+import { AuthService } from '../services/auth.service';
 
 export const routes: Routes = [
-    // { 
-    //     path: 'dashboard',
-    //     redirectTo: ({queryParams}) => {
-    //         const authService = inject(AuthServiceService);
-    //         if(authService.username.length > 0) {
-    //             return 'dashboard'
-    //         }
-    //         return 'signin'
-    //     },
-    //     pathMatch: 'full'
-    // },
+    { 
+        path: 'dashboard',
+        redirectTo: ({queryParams}) => {
+            const authService = inject(AuthService);
+            if(authService.username.length > 0) {
+                return 'dashboard'
+            }
+            return 'signin'
+        },
+        pathMatch: 'full'
+    },
     {
         path: "",
         component: AppComponent,
